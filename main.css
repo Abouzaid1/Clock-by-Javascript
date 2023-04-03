@@ -1,0 +1,112 @@
+.back-ground {
+    background-color: #1b1f35;
+}
+section{
+    background-image: url(images/akin-cakiner-nkUFXi0JSX8-unsplash.jpg);
+    background-size: cover;
+}
+.clock {
+    background-image: url("images/clock.png");
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    filter: brightness(1.5);
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+    /* z-index: 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: .5px solid rgb(150, 150, 150);
+    border-bottom: .5px solid rgb(165, 165, 165);
+}
+.hour{
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
+    z-index: 33;
+
+
+}
+.min{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    z-index: 44;
+
+}
+.sec{
+    position: absolute;
+    width: 220px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    z-index: 55;
+}
+.hh {
+width: 10px;
+height: 120px;
+background-color: #68ddac;
+border-radius: 1000px 1000px 80px 80px;
+
+
+}
+.mm {
+width: 7px;
+height: 170px;
+background-color: #bae9de;
+border-radius: 80px;
+
+
+
+}
+.ss{
+width: 3px;
+height: 200px;
+background-color: #FCFFE7;
+border-radius: 80px;
+position: absolute;
+
+}
+@media (max-width:500px) {
+    .clock {
+        width: 300px;
+    height: 300px;
+    }
+    .hh {
+        width: 8px;
+        height: 100px;
+        background-color: #EB455F;
+        border-radius: 80px;
+        
+        
+        }
+        .mm {
+        width: 5px;
+        height: 150px;
+        background-color: #BAD7E9;
+        border-radius: 80px;
+        
+        
+        
+        }
+        .ss{
+        width: 2px;
+        height: 180px;
+        background-color: #FCFFE7;
+        border-radius: 80px;
+        position: absolute;
+        
+        }
+}
